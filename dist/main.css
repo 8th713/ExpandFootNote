@@ -1,0 +1,12 @@
+.footnote-popup {
+  position: relative;
+  box-sizing: border-box;
+  margin: 0;
+  padding: .5em;
+  border-radius: 2px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, .4);
+
+  background-color: #f2f2f2;
+  color: #000;
+  line-height: 1.5;
+}

@@ -1,0 +1,58 @@
+{
+  "manifest_version": 2,
+  "name":         "Expand Footnote for Google Chrome Extentions",
+  "description":  "Expand the footnote",
+  "version":      "1.2.0",
+  "homepage_url": "https://sites.google.com/site/8th713lab/Home/chrome",
+  "update_url":   "http://sites.google.com/site/8th713lab/Home/chrome/update.xml",
+  "icons": {
+    "128": "icons/128.png",
+    "48":  "icons/48.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "http://d.hatena.ne.jp/*",
+        "http://*.g.hatena.ne.jp/*",
+        "http://takagi-hiromitsu.jp/diary/*"
+      ],
+      "js": [
+        "main.js",
+        "diary.js"
+      ],
+      "css": [
+        "main.css"
+      ]
+    },
+    {
+      "matches": [
+        "http://*.hatenablog.jp/*",
+        "http://*.hatenablog.com/*",
+        "http://*.hatenadiary.jp/*",
+        "http://*.hatenadiary.com/*",
+        "http://*.hateblo.jp/*",
+        "http://*.hateblo.com/*"
+      ],
+      "js": [
+        "main.js",
+        "blog.js"
+      ],
+      "css": [
+        "main.css"
+      ]
+    },
+    {
+      "matches": [
+        "*://*.wikipedia.org/wiki/*",
+        "*://*.uncyclopedia.info/wiki/*"
+      ],
+      "js": [
+        "main.js",
+        "wikipedia.js"
+      ],
+      "css": [
+        "main.css"
+      ]
+    }
+  ]
+}
